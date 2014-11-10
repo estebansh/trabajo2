@@ -1,7 +1,4 @@
 ﻿<%@ Application Language="C#" %>
-﻿<%@ Import Namespace="System.Web.Routing" %>
-<%@ Import Namespace="System.ServiceModel.Activation" %>
-<%@ Import Namespace="System.ServiceModel.Web " %>
 
 <script runat="server">
 
@@ -16,7 +13,6 @@
                         CdnPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js",
                         CdnDebugPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.js"
                     });
-                    RegisterRoutes(RouteTable.Routes);
 
     }
     
@@ -46,9 +42,5 @@
         // o SQLServer, el evento no se produce.
 
     }
-    private void RegisterRoutes(RouteCollection routes)
-    {
-        routes.Add(new ServiceRoute("Customers", new WebServiceHostFactory(), typeof(Service))); 
-   }
        
 </script>
