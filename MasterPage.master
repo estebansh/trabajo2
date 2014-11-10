@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Arriendo peliculas</title>
+    <link href="hoja_estilo.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 740px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div>
+            <asp:Image ID="Image1" ImageUrl="~/Imagenes/banner.png" runat="server" />
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">         
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
